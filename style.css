@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #cfdaf6;
+}
+
+div.container {
+    width: 300px;
+    height: 650px;
+    background: lightblue;
+    border-radius: 30px;
+}
+
+div.header-row {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #f9ffff;
+}
+
+span.heading {
+    font-weight: 600;
+    margin-left: 20px;
+    margin-right: auto;
+}
+
+i.fas.fa-plus {
+    margin-right: 30px;
+}
+
+div.expense-row {
+    color: #f9ffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+div.swipe-icon {
+    display: flex;
+    border: 1px solid #f9ffff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+div.expense-amount-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div.amount {
+    font-size: 2.5em;
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+div.top {
+    padding-top: 35px;
+    padding-bottom: 70px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    background: linear-gradient(to bottom, #1ab6ff 0%, #39c9fd 30%, #109bf2 100%);
+}
+
+div.budget-row {
+    display: flex;
+}
+
+div.middle {
+    background: #ecf1fd;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    margin-top: -30px;
+    padding-right: 30px;
+}
+
+span.budget-label {
+    font-weight: 700;
+    font-size: 12px;
+    color: #24355b;
+}
+
+span.budget-amount {
+    font-size: 12px;
+    margin-left: 10px;
+    color: #9ca3c2;
+    margin-right: auto;
+}
+
+div.progress {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+div.track {
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #d2daee;
+}
+
+div.progress-value {
+    border-radius: 10px;
+    position: absolute;
+    width: 70%;
+    height: 6px;
+    box-shadow: 0px 2px 8px 0px rgba(4, 210, 255, 0.75);
+    background: linear-gradient(to right, #3697FF 30%, #04D2FF 70%, #16BDFF 100%);
+}
+
+div.bottom {
+    background: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 30px;
+    margin-top: -30px;
+}
+
+div.expense-income-tab {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+span.expense-tab {
+    color: #9ca3c2;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+span.income-tab {
+    color: #9ca3c2;
+    font-weight: 700;
+    font-size: 16px;
+    margin-left: 30px;
+    margin-right: auto;
+}
+
+i.fa-filter {
+    color: #9ca3c2;
+}
+
+circle.transaction-track {
+    stroke: #e3e7e8;
+    stroke-width: 2;
+    fill: none;
+}
+
+circle.transaction-progress {
+    stroke-width: 3;
+    stroke-dasharray: 175;
+    fill: none;
+    stroke-linecap: round;
+    transform-origin: center;
+    transform: rotate(-90deg);
+}
+
+div.transaction-row {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+div.transaction-icon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+svg.transaction-svg {
+    position: absolute;
+    margin-top: 10px;
+}
+
+i.icon {
+    position: absolute;
+    color: #9ca3c2;
+    margin-top: 10px;
+}
+
+div.transaction-name-col {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: 15px;
+}
+
+span.transaction-name,
+span.transaction-amount {
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 3px;
+    color: #24355b;
+}
+
+span.transaction-desc,
+span.transaction-amount-desc {
+    font-weight: 600;
+    font-size: 10px;
+    color: #9ca3c2;
+}
+
+div.transaction-amount-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+span.active {
+    color: #24355b;
+    border-bottom: 3px solid #24355b;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Expense App | theuicode.com</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="top">
+            <div class="header-row">
+                <i class="fas fa-bars"></i>
+                <span class="heading">Expenses</span>
+                <i class="fas fa-plus"></i>
+                <i class="fas fa-ellipsis-v"></i>
+            </div>
+            <div class="expense-row">
+                <div class="swipe-icon">
+                    <i class="fas fa-caret-left"></i>
+                </div>
+                <div class="expense-amount-col">
+                    <div class="month">October</div>
+                    <div class="amount">$5,650</div>
+                </div>
+                <div class="swipe-icon">
+                    <i class="fas fa-caret-right"></i>
+                </div>
+            </div>
+        </div>
+        <div class="middle">
+            <div class="budget-row">
+                <span class="budget-label">Month budget</span>
+                <span class="budget-amount">$8,000</span>
+                <span class="budget-label ">65%</span>
+            </div>
+            <div class="progress">
+                <div class="track"></div>
+                <div class="progress-value"></div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="expense-income-tab">
+                <span class="expense-tab active">Expenses</span>
+                <span class="income-tab">Incomes</span>
+                <i class="fas fa-filter"></i>
+            </div>
+            <div class="transaction-row">
+                <div class="transaction-icon">
+                    <svg width="60" height="60" class="transaction-svg">
+                        <circle r="28" cx="30" cy="30" class="transaction-track"></circle>
+                        <circle r="28" cx="30" cy="30" class="transaction-progress" stroke="#23b3ee" stroke-dashoffset="100"></circle>
+                    </svg>
+                    <i class="fas fa-shopping-cart icon"></i>
+                </div>
+                <div class="transaction-name-col">
+                    <span class="transaction-name">Shops</span>
+                    <span class="transaction-desc">46% of budget</span>
+                </div>
+                <div class="transaction-amount-col">
+                    <span class="transaction-amount">$2,800.00</span>
+                    <span class="transaction-amount-desc">15 transactions</span>
+                </div>
+            </div>
+            <div class="transaction-row">
+                <div class="transaction-icon">
+                    <svg width="60" height="60" class="transaction-svg">
+                        <circle r="28" cx="30" cy="30" class="transaction-track"></circle>
+                        <circle r="28" cx="30" cy="30" class="transaction-progress" stroke="#eb2bbe" stroke-dashoffset="110"></circle>
+                    </svg>
+                    <i class="fas fa-heart icon"></i>
+                </div>
+                <div class="transaction-name-col">
+                    <span class="transaction-name">Health</span>
+                    <span class="transaction-desc">28% of budget</span>
+                </div>
+                <div class="transaction-amount-col">
+                    <span class="transaction-amount">$1,900.00</span>
+                    <span class="transaction-amount-desc">20 transactions</span>
+                </div>
+            </div>
+            <div class="transaction-row">
+                <div class="transaction-icon">
+                    <svg width="60" height="60" class="transaction-svg">
+                        <circle r="28" cx="30" cy="30" class="transaction-track"></circle>
+                        <circle r="28" cx="30" cy="30" class="transaction-progress" stroke="#f4af45" stroke-dashoffset="140"></circle>
+                    </svg>
+                    <i class="fas fa-coffee icon"></i>
+                </div>
+                <div class="transaction-name-col">
+                    <span class="transaction-name">Coffee</span>
+                    <span class="transaction-desc">24% of budget</span>
+                </div>
+                <div class="transaction-amount-col">
+                    <span class="transaction-amount">$950.00</span>
+                    <span class="transaction-amount-desc">5 transactions</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
